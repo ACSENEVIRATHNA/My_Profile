@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-131921: #131921;
+  --color-3b4149: #3b4149;
+  --color-febd69: #febd69;
+  --color-232f3e: #232f3e;
+  --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
+  --color-ededed: #ededed;
+  --color-777777: #777777;
+  --color-1c1c1b: #1c1c1b;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bg-design {
+  z-index: -1;
+}
+
+.container-xl {
+  margin-bottom: 80px;
+}
+
+.main {
+  padding: 0px 40px;
+}
+
+/* Home */
+.profile-image {
+  height:80dvh;
+  display: flex;
+}
+
+.profile-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Header */
+.header {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  gap:90px;
+  list-style: none;
+}
+
+.header-list li:hover {
+  color: #861ac4;
+}
+/* Header ends here */
+
+
+/* Home ends here */
+
+
+/* Education */
+.education .line{
+  margin-right: 14px;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.education .header{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.education .details h6 {
+  font-weight: 100;
+}
+
+.education .details h4 {
+  font-weight: 600;
+}
+
+.education .details p {
+  font-weight: 400;
+}
+
+
+.calender-img {
+  margin-top: -15px;
+}
+/* Education ends here */
+
+/* Skill */
+.skills {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.gap-10{
+  gap: 10px;
+}
+
+.skill-card{
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.2) ;
+  height:200px;
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-title h3 {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+.skill-card:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.skill-card:hover .skill-title {
+  display: none;
+}
+
+.skill-card:hover .skill-details{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-details {
+  display: none;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+._1{
+  margin-left: -25px;
+}
+
+._2 {
+  margin-left : -5px;
+}
+
+._3 {
+  margin-left: 15px;
+}
+.point {
+  display: flex;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.point h3 {
+  margin-top: 7px;
+  font-weight: 300;
+}
+
+
+
+/* Skill ends here */
+
+/* Stack */
+.tool-img {
+  border: 1px white solid;
+  border-radius: 10px;
+  height: 70px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+/* Stack Ends here */
+
+/* Contact */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.contact-form form input {
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+}
+
+.contact-form button{
+  border-radius: 5px;
+  background-color: #861ac4;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+}
+
+.contact-form button:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.contact-form .form-control:focus{
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  box-shadow: none;
+}
+/* Contact ends here */
+
+/* Social  */
+.social {
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  left: 20px;
+  margin-top: -50px;
+}
+
+.social a{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.v1 , .v2{
+  border-left: 3px solid white;
+  height: 500px;
+  margin-left: 14px;
+}
+.v2 {
+  margin-top: 5px;
+}
+/* Social  ends here  */
+
+/* Mobile Responsive */
+@media only screen and (max-width: 600px) {
+  .header{
+    display: none;
+  }
+
+  .profile-image {
+    order: -1;
+  }
+
+  [class*= "col-6"]{
+    width: 100%;
+  }
+  [class*= "col-1"]{
+    width: 25%;
+  }
+
+  .skills {
+    grid-template-columns: 200px;
+    justify-content: center;
+  }
+
+  .container-xl{
+    width: 110%;
+  }
+
+  .contact {
+    width: 100%;
+    margin-right: -20px;
+  }
+
+  .v1 , .v2 {
+    height: 400px;
+  }
+
+  .stack {
+    width: 100%;
+    margin-right: -25px;
+  }
+
+  .profile-image {
+    height:60dvh;
+  }
+}
