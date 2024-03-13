@@ -26,9 +26,14 @@ body {
   background-color: #000000;
 }
 
-a {
+.header a {
   text-decoration: none;
-  display: inline-block;
+  color: white;
+}
+
+.header a:hover {
+  text-decoration: none;
+  color: #861ac4;
 }
 
 .bg-design {

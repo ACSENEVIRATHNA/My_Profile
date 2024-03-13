@@ -12,7 +12,7 @@ import {
 const Skills = () => {
   return (
     <>
-      <div className="container-xl">
+      <div id="projects" className="container-xl">
         <div className="skills">
           <div className="skill-card">
             <div className="skill-title ">

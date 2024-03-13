@@ -3,7 +3,7 @@ import React from "react";
 const Stack = () => {
   return (
     <>
-      <div className="container-xl stack">
+      <div id="skills" className="container-xl stack">
         <h1 className="heading text-center">Tech Stack and Tools</h1>
         <div className="row d-flex justify-content-center">
           <div className="col-1 p-1">

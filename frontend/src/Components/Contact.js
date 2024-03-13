@@ -9,7 +9,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="container-xl contact">
+      <div id="contact" className="container-xl contact">
         <div className="row">
           <div className="contact-form col-6">
             <h3 className="contact-title my-3">Contact</h3>
