@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
   margin: 0;
@@ -231,6 +232,32 @@ body {
 .contact-form .form-control:focus{
   background-color: rgba(255, 255, 255, 0.7) !important;
   box-shadow: none;
+}
+
+
+.message {
+  height:100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+}
+
+.information {
+  font-family: "Brygada 1918", serif;
+}
+
+li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.information a{
+  font-size: 23px;
+  text-decoration: none;
+  color: white;
+}
+.con-icon {
+  margin-right: 13px;
+  font-size: 23px;
 }
 /* Contact ends here */
 
