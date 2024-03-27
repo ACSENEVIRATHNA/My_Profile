@@ -35,13 +35,13 @@ To run the project locally, follow these steps:
    cd My_Profile
    ```
 
-3. Install dependencies for both the server and the client:
+3. Install dependencies for the client:
 
    ```bash
    cd front end
    npm install
 
-4. Start the server:
+4. Start the client:
 
    ```bash
    npm start
